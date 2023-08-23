@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1470049384172-927891aad5e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bottom{
+    width: 100%;
+    min-height: 40vh;
+}
+
+.overlay{
+    width: 100%;
+    min-height: inherit;
+    background-color: #22222274;
+}
+
+.texts{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+.texts h1{
+    font-size: 5vw;
+    font-weight: 500;
+}
+.p{
+    width: 50%;
+    top: 80%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+.p p{
+    width: 30%;
+}
+
+.icons i{
+    margin-right: 1vw;
+}
+
+.bottom{
+    display: flex;
+}
+
+.bottom .one, .two, .three, .four{
+    min-height: inherit;
+}
+
+.one{
+    width: 20%;
+   background-color: #fff;
+   padding: 3vw;
+}
+
+.current{
+    color : #22222274;
+    margin-bottom: 2vw;
+}
+
+.one h3:nth-child(2){
+    color: #222222af;
+    width: 40%;
+}
+
+.two{
+    width: 30%;
+   background-image: url(https://images.unsplash.com/photo-1475578749612-705fc64d0574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+   background-size: cover;
+}
+.three{
+    width: 20%;
+    min-height: inherit;
+}
+
+
+.four{
+    width: 30%;
+    background-color: #1F1F1F;
+    padding: 3vw;
+    color: #ffffff97;
+}
+
+.ttop{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1530396220186-53cd210802ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80);
+    background-size: cover;
+}
+
+.tbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1532629804872-98086b058cae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80);
+    background-size: cover;
+}
+
+.four h3{
+    margin-bottom: 1.5vw;
+}
+
+.comment-1{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.4vw;
+}
+
+.comment-1 img{
+    width: 13%;
+    height: 5vh;
+    border-radius: 50%;
+    margin-right: 1.5vw;
+}
+
+#span{
+    color: #ffffff47;
+}
+
+@media(max-width:1000px){
+    .texts{
+        flex-direction: column;
+        top: 20%;
+        left: -30%;
+    }
+    .texts h1{
+        font-size: 10vw;
+        font-weight: 500;
+    }
+    .p{
+        flex-direction: column;
+        margin-top: 5vw;
+        padding: 2vw;
+    }
+    
+    .p p{
+        width: 80%;
+        margin-bottom: 5vw;
+    }
+    .icons{
+        width: 80%; 
+    }
+    .bottom{
+        flex-direction: column;
+    }
+    .bottom .one, .two, .three, .four{
+        width: 100%;
+    }
+
+    .ttop{
+        width: 100%;
+        height: 50vh;
+        background-image: url(https://images.unsplash.com/photo-1530396220186-53cd210802ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80);
+        background-size: cover;
+    }
+    
+    .tbottom{
+        width: 100%;
+        height: 50vh;
+        background-image: url(https://images.unsplash.com/photo-1532629804872-98086b058cae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .one{
+       padding: 10vw;
+    }
+    
+    .current{
+        font-size: 10vw;
+        margin-bottom: 10vw;
+    }
+    
+    .one h3:nth-child(2){
+        font-size: 10vw;
+        width: 100%;
+    }
+
+    .four{
+        padding: 10vw;
+    }
+
+    .four h3{
+        margin-bottom: 10vw;
+    }
+    
+    .comment-1{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.4vw;
+    }
+    
+    .comment-1 img{
+        margin-right: 3vw;
+    }
+}
